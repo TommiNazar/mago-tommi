@@ -151,6 +151,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-transform: uppercase;
+    font-size: 3em;
 }
 
 .frase p {
@@ -187,11 +188,15 @@ footer {
 }
 
 .texto-bio-index {
+    text-decoration: none;
     background-color: sandybrown;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+.titulo-bio-index:hover {
+    color: #b20600
 }
 
 .descripcion-bio {
@@ -202,6 +207,22 @@ footer {
     display: flex;
     justify-content: center;
     font-size: 3rem;
+}
+
+.boton-bio {
+    border-radius: 6em;
+    border-color: #000000;
+    background-color: #000000;
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 2em;
+    transition-duration: 1s;
+}
+.boton-bio:hover {
+    color: #b20600;
+    background-color: #dddddd;
+    font-size: 3em;
+    
 }
 
 /*--------tercera seccion, trailer-----------*/
@@ -257,6 +278,12 @@ footer {
 .img-serv {
     width: 80%;
     height: 80%;
+    transition-duration: 1s;
+}
+.img-serv:hover {
+    width: 86%;
+    height: 86%;
+
 }
 
 .titulo-serv {
