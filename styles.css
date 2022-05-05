@@ -8,39 +8,6 @@
 
 /*-------css menu de navegacion*-------*/
 
-.menu {
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.menu-nav {
-    width: 60%;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.menu-nav li a {
-    text-decoration: none;
-    color: whitesmoke;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #dddddd;
-    display: flex;
-    justify-content: left;
-}
-
-.menu-nav li a:hover {
-    color: #b20600;
-    text-shadow: none;
-}
-
 .imagen-logo {
     margin-left: 0;
     height: auto;
@@ -133,7 +100,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     background-attachment: fixed;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .presentacion-conteiner {
@@ -169,15 +136,21 @@ footer {
     flex-direction: row;
     justify-content: space-between;
 }
-
+.titulos-index{
+    background-color: #000000; 
+}
 .titulo-bio-index {
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    height: 3rem;
+    height: auto;
     background-color: #000000;
     color: whitesmoke;
+    font-size: 2em;
+}
+.titulo-bio-index:hover {
+    color: #b20600
 }
 
 .imagen-bio {
@@ -195,9 +168,7 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
-.titulo-bio-index:hover {
-    color: #b20600
-}
+
 
 .descripcion-bio {
     margin: 1, 8rem;
@@ -431,6 +402,15 @@ footer {
 /*------------fin main pag bio----------*/
 
 /*-------------main pag servicios-----------*/
+.imagen-nav-servicio{
+    
+        width: 100%;
+        height: 20em;
+        background-image: url(imagenes/IMG-20170520-WA0097.jpg);
+        background-size: cover;
+            
+}
+
 .conteiner-servicios {
     display: grid;
     grid-template-columns: 1fr;
@@ -611,9 +591,11 @@ footer {
     .menu {
         display: flex;
         justify-content: left;
+        background-color: #dddddd
     }
 
     .menu-nav {
+        background-color: black;
         width: 40%;
         display: flex;
         justify-content: space-between;
@@ -877,11 +859,29 @@ footer {
 
 /*-------tablet------------*/
 
-@media screen and (min-width: 451px) and (max-width: 960px) {
+@media screen and (min-width: 451px) and (max-width: 991px) {
 
+    /*---------menu-----------*/
+    .menu {
+        display: flex;
+        justify-content: left;
+        background-color: #dddddd
+    }
+    .menu-nav a {
+        background-color: black;
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.8rem;
+    }
     /*-------index---------*/
     #presentacion {
         background-attachment: unset;
+    }
+    .frase {
+        font-size: 2rem;
     }
     .texto-bio-index {
         font-size: 0.8rem;
