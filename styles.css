@@ -96,7 +96,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 30rem;
+    height: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -113,8 +113,7 @@ footer {
 }
 
 .frase {
-    color: #b20600;
-    font-weight: bold;
+    color: silver;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,6 +130,7 @@ footer {
 /* -------segunda seccion, bio-------------*/
 
 .presentacion-bio-index {
+    
     width: 100%;
     height: 30rem;
     display: flex;
@@ -163,7 +163,26 @@ footer {
 
 .texto-bio-index {
     text-decoration: none;
-    background-color: sandybrown;
+    background: radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg,
+            transparent 74px,
+            transparent 75px,
+            #a4a4a4 75px,
+            #a4a4a4 76px,
+            transparent 77px,
+            transparent 109px),
+        linear-gradient(-45deg,
+            transparent 75px,
+            transparent 76px,
+            #a4a4a4 76px,
+            #a4a4a4 77px,
+            transparent 78px,
+            transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +251,26 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: sandybrown;
+    background: radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg,
+            transparent 74px,
+            transparent 75px,
+            #a4a4a4 75px,
+            #a4a4a4 76px,
+            transparent 77px,
+            transparent 109px),
+        linear-gradient(-45deg,
+            transparent 75px,
+            transparent 76px,
+            #a4a4a4 76px,
+            #a4a4a4 77px,
+            transparent 78px,
+            transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
     width: 100%;
     height: auto;
     flex-wrap: wrap;
@@ -319,6 +357,7 @@ footer {
     grid-template-rows: auto;
     width: 100%;
     height: auto;
+    
 }
 
 /*--------------main pag bio---------------*/
@@ -331,19 +370,63 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     align-items: center;
+    background: radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg,
+            transparent 74px,
+            transparent 75px,
+            #a4a4a4 75px,
+            #a4a4a4 76px,
+            transparent 77px,
+            transparent 109px),
+        linear-gradient(-45deg,
+            transparent 75px,
+            transparent 76px,
+            #a4a4a4 76px,
+            #a4a4a4 77px,
+            transparent 78px,
+            transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    width: 100%;
+    height: auto;
+    
 }
 .bio-conteiner1 {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    background-color: sandybrown;
+    background: radial-gradient(black 3px, transparent 4px),
+        radial-gradient(black 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg,
+            transparent 74px,
+            transparent 75px,
+            #a4a4a4 75px,
+            #a4a4a4 76px,
+            transparent 77px,
+            transparent 109px),
+        linear-gradient(-45deg,
+            transparent 75px,
+            transparent 76px,
+            #a4a4a4 76px,
+            #a4a4a4 77px,
+            transparent 78px,
+            transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    
+    
     width: 100%;
     height: auto;
 }
 
 .imagen-bio1 {
     display: flex;
-    background-color: sandybrown;
+    
     width: 50%;
     height: 30rem;
 }
@@ -355,7 +438,7 @@ footer {
 .bio-conteiner2 {
     display: flex;
     flex-direction: row-reverse;
-    background-color: sandybrown;
+    
     width: 100%;
     height: auto;
 }
@@ -439,7 +522,26 @@ footer {
     width: 100%;
     height: auto;
     display: flex;
-    background-color: sandybrown;
+    background: radial-gradient(#36AE7C 3px, transparent 4px),
+        radial-gradient(#36AE7C 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg,
+            transparent 74px,
+            transparent 75px,
+            #a4a4a4 75px,
+            #a4a4a4 76px,
+            transparent 77px,
+            transparent 109px),
+        linear-gradient(-45deg,
+            transparent 75px,
+            transparent 76px,
+            #a4a4a4 76px,
+            #a4a4a4 77px,
+            transparent 78px,
+            transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 .servicio {
@@ -480,7 +582,26 @@ footer {
 /*-----------------main galeria----------------------------*/
 
 #fotos-galeria {
-    background-color: sandybrown;
+    background: radial-gradient(#187498 3px, transparent 4px),
+        radial-gradient(#187498 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg,
+            transparent 74px,
+            transparent 75px,
+            #a4a4a4 75px,
+            #a4a4a4 76px,
+            transparent 77px,
+            transparent 109px),
+        linear-gradient(-45deg,
+            transparent 75px,
+            transparent 76px,
+            #a4a4a4 76px,
+            #a4a4a4 77px,
+            transparent 78px,
+            transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 #fotos-galeria h2 {
@@ -556,7 +677,26 @@ footer {
 .contacto-form {
     display: flex;
     flex-direction: row;
-    background-color: sandybrown;
+    background: radial-gradient(#187498 3px, transparent 4px),
+        radial-gradient(#187498 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg,
+            transparent 74px,
+            transparent 75px,
+            #a4a4a4 75px,
+            #a4a4a4 76px,
+            transparent 77px,
+            transparent 109px),
+        linear-gradient(-45deg,
+            transparent 75px,
+            transparent 76px,
+            #a4a4a4 76px,
+            #a4a4a4 77px,
+            transparent 78px,
+            transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 
 .contacto-text {
@@ -933,7 +1073,6 @@ footer {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: sandybrown;
         width: 100%;
         height: auto;
     }
