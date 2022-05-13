@@ -1,0 +1,400 @@
+/*------menu nav------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imagen-logo {
+    margin-left: 0;
+    height: auto;
+    width: auto;
+    max-width: 6rem;
+    max-height: 6rem;
+    justify-content: left;
+}
+
+/*---footer-------*/
+
+
+footer {
+    background-image: url(../imagenes/footer.jpg);
+    width: 100%;
+    height: 15em;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .menu-footer1 {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin-right: 3em;
+
+        li {
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            a {
+                text-decoration: none;
+                color: whitesmoke;
+
+                &:hover {
+                    color: #b20600;
+                    text-shadow: none;
+                    @media screen and (max-width: 450px) {
+                        color: orangered;
+                    }
+                }
+            }
+        }
+    }
+
+    .menu-footer2 {
+        display: flex;
+        align-items: flex-end;
+
+        .iconos-footer {
+            width: 100%;
+            list-style-type: none;
+            display: flex;
+            justify-content: right;
+            flex-direction: column;
+            color: whitesmoke;
+            align-items: baseline;
+
+            .img-footer {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+}
+
+/*---index main----*/
+
+.main-conteiner-index {
+
+    #presentacion {
+        background-image: url(../imagenes/principal.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 40rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-attachment: fixed;
+        align-items: center;
+
+        .presentacion-conteiner {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 18%;
+
+            .frase {
+                color: rgb(179, 80, 80);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-transform: uppercase;
+                font-size: 3em;
+
+                p {
+                    display: flex;
+
+                    justify-content: center;
+                }
+                @media screen and (max-width: 450px){
+                    font-size: 1rem;
+                }
+                @media screen and (min-width: 451px) and (max-width: 991px){
+                    font-size: 2rem;
+                }
+            }
+
+
+        }
+        @media screen and (max-width: 450px){
+            background-attachment: unset;
+        }
+        @media screen and (min-width: 451px) and (max-width: 991px){
+            background-attachment: unset;
+        }
+
+    }
+
+    #presentacion-bio {
+
+
+        .titulos-index {
+            background-color: #000000;
+
+            .titulo-bio-index {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                height: auto;
+                background-color: #000000;
+                color: whitesmoke;
+                font-size: 2em;
+
+                &:hover {
+                    color: #b20600
+                }
+                @media screen and (max-width: 450px){
+                    width: auto;
+        height: 2rem;
+                }
+            }
+        }
+
+        .presentacion-bio-index {
+            width: 100%;
+            height: 30rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .imagen-bio {
+                width: 40%;
+                height: 30rem;
+                display: flex;
+                justify-content: left;
+                @media screen and (max-width: 450px){
+                    width: 100%;
+                }
+            }
+
+            .texto-bio-index {
+                text-decoration: none;
+                background: radial-gradient(black 3px, transparent 4px),
+                    radial-gradient(black 3px, transparent 4px),
+                    linear-gradient(#fff 4px, transparent 0),
+                    linear-gradient(45deg,
+                        transparent 74px,
+                        transparent 75px,
+                        #a4a4a4 75px,
+                        #a4a4a4 76px,
+                        transparent 77px,
+                        transparent 109px),
+                    linear-gradient(-45deg,
+                        transparent 75px,
+                        transparent 76px,
+                        #a4a4a4 76px,
+                        #a4a4a4 77px,
+                        transparent 78px,
+                        transparent 109px),
+                    #fff;
+                background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+                background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .titulo-bio {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 3rem;
+                    @media screen and (min-width: 451px) and (max-width: 991px){
+                        font-size: 2rem;
+                    }
+                }
+
+                .boton-bio {
+                    border-radius: 6em;
+                    border-color: #000000;
+                    background-color: #000000;
+                    text-decoration: none;
+                    color: #dddddd;
+                    font-size: 2em;
+                    transition-duration: 1s;
+
+                    &:hover {
+                        color: #b20600;
+                        background-color: #dddddd;
+                        font-size: 3em;
+                    }
+                }
+                @media screen and (max-width: 450px){
+                    font-size: 1rem;
+                }
+                @media screen and (min-width: 451px) and (max-width: 991px){
+                    font-size: 0.8rem;
+                }
+            }
+            @media screen and (max-width: 450px){
+                display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        height: auto;
+            }
+        }
+    }
+
+    #trailer {
+        .titulo-bio-index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+            background-color: #000000;
+            color: whitesmoke;
+            font-size: 2em;
+
+            &:hover {
+                color: #b20600
+            }
+        }
+
+        .video-trailer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    #presentacion_servicios-index {
+        .titulo-shows {
+            .titulo-bio-index {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                height: auto;
+                background-color: #000000;
+                color: whitesmoke;
+                font-size: 2em;
+
+                &:hover {
+                    color: #b20600
+                }
+            }
+        }
+
+        .servicios-index {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background: radial-gradient(black 3px, transparent 4px),
+                radial-gradient(black 3px, transparent 4px),
+                linear-gradient(#fff 4px, transparent 0),
+                linear-gradient(45deg,
+                    transparent 74px,
+                    transparent 75px,
+                    #a4a4a4 75px,
+                    #a4a4a4 76px,
+                    transparent 77px,
+                    transparent 109px),
+                linear-gradient(-45deg,
+                    transparent 75px,
+                    transparent 76px,
+                    #a4a4a4 76px,
+                    #a4a4a4 77px,
+                    transparent 78px,
+                    transparent 109px),
+                #fff;
+            background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+            background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+
+            .servicio-index {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 50%;
+                height: 50%;
+                align-items: center;
+
+                .img-serv {
+                    width: 80%;
+                    height: 80%;
+                    transition-duration: 1s;
+
+                    &:hover {
+                        width: 86%;
+                        height: 86%;
+                    }
+
+                    .titulo-serv {
+                        width: 40%;
+                        height: 40%;
+                        font-size: 1rem;
+                    }
+                }
+                @media screen and (max-width: 450px){
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 450px){
+                display: flex;
+        flex-direction: column;
+            }
+        }
+    }
+    #despedida {
+        width: 100%;
+        height: 250px;
+        background-image: url(../imagenes/IMG-20170607-WA0033.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        .titulo-desp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 100px;
+            color: whitesmoke;
+        }
+        
+        .texto-despedida {
+            color: whitesmoke;
+            @media screen and (max-width: 450px){
+                font-size: 0.8rem;
+            }
+        }
+        @media screen and (max-width: 450px){
+            background-attachment: unset;
+        }
+    }
+
+    .titulo-gal-index {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 100px;
+        color: whitesmoke;
+        background-color: #000000;
+        .titulo-bio-index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: auto;
+            background-color: #000000;
+            color: whitesmoke;
+            font-size: 2em;
+
+            &:hover {
+                color: #b20600
+            }
+    }
+    }
+
+
+}
