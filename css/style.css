@@ -1,17 +1,20 @@
 /*------menu nav------*/
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .imagen-logo {
   margin-left: 0;
   height: auto;
   width: auto;
-  max-width: 6rem;
-  max-height: 6rem;
+  max-height: 10rem;
   justify-content: left;
+}
+@media screen and (max-width: 450px) {
+  .imagen-logo {
+    max-height: 5rem;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .imagen-logo {
+    max-height: 7rem;
+  }
 }
 
 /*---footer-------*/
@@ -91,12 +94,13 @@ footer .menu-footer2 .iconos-footer .img-footer {
   padding-top: 18%;
 }
 .main-conteiner-index #presentacion .presentacion-conteiner .frase {
-  color: rgb(179, 80, 80);
+  color: rgb(211, 181, 181);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-transform: uppercase;
   font-size: 3em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .main-conteiner-index #presentacion .presentacion-conteiner .frase p {
   display: flex;
@@ -109,7 +113,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .main-conteiner-index #presentacion .presentacion-conteiner .frase {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -339,6 +343,12 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .main-conteiner-index .titulo-gal-index .titulo-bio-index:hover {
   color: #b20600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
