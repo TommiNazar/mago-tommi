@@ -102,6 +102,10 @@ footer .menu-footer2 .iconos-footer .img-footer {
   font-size: 3em;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+.main-conteiner-index #presentacion .presentacion-conteiner .frase span {
+  display: flex;
+  justify-content: center;
+}
 .main-conteiner-index #presentacion .presentacion-conteiner .frase p {
   display: flex;
   justify-content: center;
