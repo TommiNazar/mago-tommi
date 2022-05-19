@@ -1,4 +1,5 @@
 /*------menu nav------*/
+@import "../scss/__variables.scss";
 
 
 .imagen-logo {
@@ -7,10 +8,12 @@
     width: auto;
     max-height: 10rem;
     justify-content: left;
+
     @media screen and (max-width: 450px) {
         max-height: 5rem;
     }
-    @media screen and (min-width: 451px) and (max-width: 991px){
+
+    @media screen and (min-width: 451px) and (max-width: 991px) {
         max-height: 7rem;
     }
 }
@@ -49,6 +52,7 @@ footer {
                 &:hover {
                     color: #b20600;
                     text-shadow: none;
+
                     @media screen and (max-width: 450px) {
                         color: orangered;
                     }
@@ -81,6 +85,7 @@ footer {
 /*---index main----*/
 
 .main-conteiner-index {
+    @include bg(black);
 
     #presentacion {
         background-image: url(../imagenes/principal.jpg);
@@ -102,13 +107,14 @@ footer {
             padding-top: 18%;
 
             .frase {
-                color: rgb(211, 181, 181);
+                color: rgb(117, 24, 24);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 text-transform: uppercase;
                 font-size: 3em;
-                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
                 span {
                     display: flex;
 
@@ -120,20 +126,24 @@ footer {
 
                     justify-content: center;
                 }
-                @media screen and (max-width: 450px){
+
+                @media screen and (max-width: 450px) {
                     font-size: 1rem;
                 }
-                @media screen and (min-width: 451px) and (max-width: 991px){
+
+                @media screen and (min-width: 451px) and (max-width: 991px) {
                     font-size: 1.5rem;
                 }
             }
 
 
         }
-        @media screen and (max-width: 450px){
+
+        @media screen and (max-width: 450px) {
             background-attachment: unset;
         }
-        @media screen and (min-width: 451px) and (max-width: 991px){
+
+        @media screen and (min-width: 451px) and (max-width: 991px) {
             background-attachment: unset;
         }
 
@@ -146,21 +156,14 @@ footer {
             background-color: #000000;
 
             .titulo-bio-index {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: auto;
-                height: auto;
-                background-color: #000000;
-                color: whitesmoke;
-                font-size: 2em;
-
+                @extend %titulos-index;
                 &:hover {
                     color: #b20600
                 }
-                @media screen and (max-width: 450px){
+
+                @media screen and (max-width: 450px) {
                     width: auto;
-        height: 2rem;
+                    height: 2rem;
                 }
             }
         }
@@ -177,33 +180,15 @@ footer {
                 height: 30rem;
                 display: flex;
                 justify-content: left;
-                @media screen and (max-width: 450px){
+
+                @media screen and (max-width: 450px) {
                     width: 100%;
                 }
             }
 
             .texto-bio-index {
                 text-decoration: none;
-                background: radial-gradient(black 3px, transparent 4px),
-                    radial-gradient(black 3px, transparent 4px),
-                    linear-gradient(#fff 4px, transparent 0),
-                    linear-gradient(45deg,
-                        transparent 74px,
-                        transparent 75px,
-                        #a4a4a4 75px,
-                        #a4a4a4 76px,
-                        transparent 77px,
-                        transparent 109px),
-                    linear-gradient(-45deg,
-                        transparent 75px,
-                        transparent 76px,
-                        #a4a4a4 76px,
-                        #a4a4a4 77px,
-                        transparent 78px,
-                        transparent 109px),
-                    #fff;
-                background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-                background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -213,19 +198,20 @@ footer {
                     display: flex;
                     justify-content: center;
                     font-size: 3rem;
-                    @media screen and (min-width: 451px) and (max-width: 991px){
+
+                    @media screen and (min-width: 451px) and (max-width: 991px) {
                         font-size: 2rem;
                     }
                 }
 
                 .boton-bio {
-                    border-radius: 6em;
-                    border-color: #000000;
-                    background-color: #000000;
-                    text-decoration: none;
-                    color: #dddddd;
-                    font-size: 2em;
-                    transition-duration: 1s;
+                    border-radius: map-get($boton, br );
+                    border-color: map-get($boton, bc );
+                    background-color: map-get($boton, bgc);
+                    text-decoration: map-get($boton, td);
+                    color: map-get($boton, c );
+                    font-size: map-get($boton, fz );
+                    transition-duration: map-get($boton ,ts );
 
                     &:hover {
                         color: #b20600;
@@ -233,32 +219,31 @@ footer {
                         font-size: 3em;
                     }
                 }
-                @media screen and (max-width: 450px){
+
+                @media screen and (max-width: 450px) {
                     font-size: 1rem;
                 }
-                @media screen and (min-width: 451px) and (max-width: 991px){
+
+                @media screen and (min-width: 451px) and (max-width: 991px) {
                     font-size: 0.8rem;
                 }
             }
-            @media screen and (max-width: 450px){
+
+            @media screen and (max-width: 450px) {
                 display: flex;
-        flex-direction: column;
-        justify-content: unset;
-        height: auto;
+                flex-direction: column;
+                justify-content: unset;
+                height: auto;
             }
         }
     }
 
     #trailer {
-        .titulo-bio-index {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: auto;
-            height: auto;
-            background-color: #000000;
-            color: whitesmoke;
-            font-size: 2em;
+        
+
+        .titulo-trailer-index {
+            @extend %titulos-index;
+
 
             &:hover {
                 color: #b20600
@@ -275,15 +260,9 @@ footer {
 
     #presentacion_servicios-index {
         .titulo-shows {
-            .titulo-bio-index {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: auto;
-                height: auto;
-                background-color: #000000;
-                color: whitesmoke;
-                font-size: 2em;
+            .titulo-servicios-index {
+                @extend %titulos-index;
+
 
                 &:hover {
                     color: #b20600
@@ -295,26 +274,7 @@ footer {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            background: radial-gradient(black 3px, transparent 4px),
-                radial-gradient(black 3px, transparent 4px),
-                linear-gradient(#fff 4px, transparent 0),
-                linear-gradient(45deg,
-                    transparent 74px,
-                    transparent 75px,
-                    #a4a4a4 75px,
-                    #a4a4a4 76px,
-                    transparent 77px,
-                    transparent 109px),
-                linear-gradient(-45deg,
-                    transparent 75px,
-                    transparent 76px,
-                    #a4a4a4 76px,
-                    #a4a4a4 77px,
-                    transparent 78px,
-                    transparent 109px),
-                #fff;
-            background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
-            background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+            
             width: 100%;
             height: auto;
             flex-wrap: wrap;
@@ -343,22 +303,26 @@ footer {
                         font-size: 1rem;
                     }
                 }
-                @media screen and (max-width: 450px){
+
+                @media screen and (max-width: 450px) {
                     width: 100%;
                 }
             }
-            @media screen and (max-width: 450px){
+
+            @media screen and (max-width: 450px) {
                 display: flex;
-        flex-direction: column;
+                flex-direction: column;
             }
         }
     }
+
     #despedida {
         width: 100%;
         height: 250px;
         background-image: url(../imagenes/IMG-20170607-WA0033.jpg);
         background-attachment: fixed;
         background-size: cover;
+
         .titulo-desp {
             display: flex;
             justify-content: center;
@@ -367,41 +331,41 @@ footer {
             height: 100px;
             color: whitesmoke;
         }
-        
+
         .texto-despedida {
             color: whitesmoke;
-            @media screen and (max-width: 450px){
+
+            @media screen and (max-width: 450px) {
                 font-size: 0.8rem;
             }
         }
-        @media screen and (max-width: 450px){
+
+        @media screen and (max-width: 450px) {
             background-attachment: unset;
         }
     }
 
-    .titulo-gal-index {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: 100px;
-        color: whitesmoke;
-        background-color: #000000;
-        .titulo-bio-index {
+    #imagenes-index {
+        
+
+        .titulo-gal-index {
             display: flex;
             justify-content: center;
             align-items: center;
             width: auto;
-            height: auto;
-            background-color: #000000;
+            height: 100px;
             color: whitesmoke;
-            font-size: 2em;
+            background-color: #000000;
 
-            &:hover {
-                color: #b20600
+            .titulo-galeria-index {
+                @extend %titulos-index;
+                &:hover {
+                    color: #b20600;
+                }
             }
+        }
     }
-    }
+
 
 
 }

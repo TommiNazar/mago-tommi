@@ -1,0 +1,6 @@
+lugares donde aplique seo{
+    .en head con las etiquetas meta
+    .mejorando los h1
+    mejorando title
+    
+}

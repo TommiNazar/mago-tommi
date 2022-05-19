@@ -1,0 +1,109 @@
+.conteiner-contacto{
+    .imagen-nav-servicio {
+        width: 100%;
+        height: 20em;
+        background-image: url(../imagenes/IMG-20170520-WA0097.jpg);
+        background-size: cover;
+    
+    }
+
+    .presentacion-contacto {
+        background-color: #000000;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        h1 {
+            text-align: center;
+            color: saddlebrown;
+            padding: 1rem;
+            font-size: 3rem;
+            @media screen and (max-width: 450px){
+                font-size: 2rem ;
+            }
+            @media screen and (min-width: 451px) and (max-width: 991px){
+                font-size: 2rem ;
+            }
+        }
+        h2 {
+            text-align: center;
+            font-size: 1rem;
+            @media screen and (max-width: 450px){
+                font-size: 1rem;
+            }
+            @media screen and (min-width: 451px) and (max-width: 991px){
+                font-size: 1rem;
+            }
+        }
+    }
+    .contacto-form {
+        display: flex;
+        flex-direction: row;
+        @include bg(#F9D923);
+
+        @media screen and (max-width: 450px){
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        @media screen and (min-width: 451px) and (max-width: 991px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contacto-text {
+            width: 40%;
+            margin: 2em;
+            @media screen and (max-width: 450px){
+                width: 100%;
+                margin: 1em;
+                font-size: 0.8rem;
+            }
+            @media screen and (min-width: 451px) and (max-width: 991px){
+                width: 90%;
+                margin: 1em;
+                font-size: 0.8rem;
+            }
+            
+        }
+        .contacto-formulario {
+            width: 50%;
+            margin: 1em;
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 450px){
+                width: 100%;
+                margin: 1em;
+                display: flex;
+                flex-direction: column;
+            }
+            @media screen and (min-width: 451px) and (max-width: 991px){
+                width: 100%;
+                margin: 1em;
+                display: flex;
+                flex-direction: column;
+            }
+            textarea {
+                width: 80%;
+                height: 10em;
+                margin: 1em;
+                @media screen and (max-width: 450px){
+                    width: 80%;
+                    height: 10em;
+                    margin: 1em;
+                }
+                @media screen and (min-width: 451px) and (max-width: 991px){
+                    width: 80%;
+                    height: 10em;
+                    margin: 1em;
+                }
+            }
+            
+            input {
+                width: 30%;
+            }
+        }
+    }
+}
+
+

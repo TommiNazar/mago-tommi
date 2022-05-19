@@ -434,6 +434,15 @@ footer {
     width: 100%;
     height: 100%;
 }
+.texto-bio h1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+}
+.texto-bio h2 {
+    padding: 1em;
+    font-size: 1em;
+}
 
 .bio-conteiner2 {
     display: flex;
@@ -448,19 +457,9 @@ footer {
     height: auto;
 
 }
-.img2-bio{
+.img2-bio {
     width: 100%;
     height: 100%;
-}
-.texto-bio h1 {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 2em;
-}
-
-.texto-bio h2 {
-    padding: 1em;
-    font-size: 1em;
 }
 
 .logos-bio {
