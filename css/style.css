@@ -325,6 +325,10 @@ footer .menu-footer2 .iconos-footer .img-footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.disclaimer {
+  display: none;
+}
+
 .imagen-logo {
   margin-left: 0;
   height: auto;
