@@ -525,6 +525,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 .conteiner-bio #bio .grid-conteiner-bio .bio-conteiner1 .texto-bio h2 {
   padding: 1em;
   font-size: 1em;
+  background-color: rgba(221, 221, 221, 0.6784313725);
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .conteiner-bio #bio .grid-conteiner-bio .bio-conteiner1 .texto-bio h2 {
@@ -641,6 +642,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .conteiner-bio #bio .grid-conteiner-bio .bio-conteiner2 .logos-bio .logo-bio h2 {
   font-size: 1em;
+  background-color: rgba(221, 221, 221, 0.6784313725);
 }
 @media screen and (max-width: 450px) {
   .conteiner-bio #bio .grid-conteiner-bio .bio-conteiner2 .logos-bio {
@@ -1045,6 +1047,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 .conteiner-contacto .contacto-form .contacto-text {
   width: 40%;
   margin: 2em;
+  background-color: rgba(221, 221, 221, 0.6784313725);
 }
 @media screen and (max-width: 450px) {
   .conteiner-contacto .contacto-form .contacto-text {
