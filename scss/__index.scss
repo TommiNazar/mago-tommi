@@ -2,6 +2,7 @@
 @import "../scss/__variables.scss";
 
 
+
 .imagen-logo {
     margin-left: 0;
     height: auto;
@@ -52,11 +53,8 @@ footer {
                 &:hover {
                     color: #b20600;
                     text-shadow: none;
-
-                    @media screen and (max-width: 450px) {
-                        color: orangered;
-                    }
                 }
+                
             }
         }
     }
@@ -88,7 +86,7 @@ footer {
     @include bg(black);
 
     #presentacion {
-        background-image: url(../imagenes/principal.jpg);
+        background-image: url(../imagenes/presentacion-index.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         width: auto;
@@ -98,6 +96,10 @@ footer {
         justify-content: space-around;
         background-attachment: fixed;
         align-items: center;
+        @media screen and (max-width: 450px) {
+            // background-image: url(../imagenes/principal.jpg);
+            height: 25rem;
+        }
 
         .presentacion-conteiner {
             display: flex;
@@ -113,26 +115,43 @@ footer {
                 justify-content: center;
                 text-transform: uppercase;
                 font-size: 3em;
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-family: 'Lobster', cursive;
+                
 
                 span {
                     display: flex;
+                    margin-bottom: 2em;
 
                     justify-content: center;
+                    font-family: 'Abril Fatface', cursive;
+                    color:silver;
+                    background-color: #0000008a;
+                    @media screen and (max-width: 450px) {
+                        background-color:#00000071;
+                        font-size: 1.5rem;
+                    }
+    
+                    @media screen and (min-width: 451px) and (max-width: 991px) {
+                        color:silver;
+                        background-color:#00000056;
+                        font-size: 2.5rem;
+                        
+                    }
                 }
 
                 p {
                     display: flex;
 
                     justify-content: center;
+                    font-family: 'Lobster', cursive;
                 }
 
                 @media screen and (max-width: 450px) {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
 
                 @media screen and (min-width: 451px) and (max-width: 991px) {
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
                 }
             }
 
@@ -154,6 +173,7 @@ footer {
 
         .titulos-index {
             background-color: #000000;
+            
 
             .titulo-bio-index {
                 @extend %titulos-index;
@@ -174,15 +194,32 @@ footer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            @media screen and (max-width: 450px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: unset;
+                height: auto;
+            }
+            @media screen and (min-width: 451px) and (max-width: 991px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+            }
 
             .imagen-bio {
-                width: 40%;
+                width: 100%;
                 height: 30rem;
                 display: flex;
                 justify-content: left;
 
                 @media screen and (max-width: 450px) {
                     width: 100%;
+                }
+                @media screen and (min-width: 451px) and (max-width: 991px){
+                    width: 75%;
+                    display: flex;
+                    justify-content: right;
                 }
             }
 
@@ -193,13 +230,27 @@ footer {
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
+                
 
                 .titulo-bio {
                     display: flex;
                     justify-content: center;
                     font-size: 3rem;
+                    font-family: 'Abril Fatface', cursive;      
+                }
+                .descripcion-bio{
+                    background-color: #ddddddad;
+                    font-family: 'Truculenta', sans-serif;
+                    font-size: 2.5rem;
+                    margin: 1.5rem;
+                    text-shadow: 1.5px 1.5px 2px black;
+                    font-weight: bold;
 
-                    @media screen and (min-width: 451px) and (max-width: 991px) {
+                    @media screen and (max-width: 451px){
+                        font-size: 1.5rem;
+                    }
+
+                    @media screen and (min-width: 451px) and (max-width: 991px){
                         font-size: 2rem;
                     }
                 }
@@ -218,22 +269,7 @@ footer {
                         background-color: #dddddd;
                         font-size: 3em;
                     }
-                }
-
-                @media screen and (max-width: 450px) {
-                    font-size: 1rem;
-                }
-
-                @media screen and (min-width: 451px) and (max-width: 991px) {
-                    font-size: 0.8rem;
-                }
-            }
-
-            @media screen and (max-width: 450px) {
-                display: flex;
-                flex-direction: column;
-                justify-content: unset;
-                height: auto;
+                }    
             }
         }
     }
@@ -330,17 +366,25 @@ footer {
             width: auto;
             height: 100px;
             color: whitesmoke;
+            font-size: 2rem;
         }
 
         .texto-despedida {
             color: whitesmoke;
+            font-size: 1.5rem;
 
             @media screen and (max-width: 450px) {
                 font-size: 0.8rem;
             }
+            @media screen and (min-width: 451px) and (max-width: 991px){
+                font-size: 1rem;
+            }
         }
 
         @media screen and (max-width: 450px) {
+            background-attachment: unset;
+        }
+        @media screen and (min-width: 451px) and (max-width: 700px){
             background-attachment: unset;
         }
     }

@@ -1,4 +1,9 @@
 /*------menu nav------*/
+/*-----fonts------
+font-family: 'Abril Fatface', cursive;
+font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Truculenta', sans-serif;*/
 .main-conteiner-index #imagenes-index .titulo-gal-index .titulo-galeria-index, .main-conteiner-index #presentacion_servicios-index .titulo-shows .titulo-servicios-index, .main-conteiner-index #trailer .titulo-trailer-index, .main-conteiner-index #presentacion-bio .titulos-index .titulo-bio-index {
   display: flex;
   justify-content: center;
@@ -61,11 +66,6 @@ footer .menu-footer1 li a:hover {
   color: #b20600;
   text-shadow: none;
 }
-@media screen and (max-width: 450px) {
-  footer .menu-footer1 li a:hover {
-    color: orangered;
-  }
-}
 footer .menu-footer2 {
   display: flex;
   align-items: flex-end;
@@ -91,7 +91,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
 }
 .main-conteiner-index #presentacion {
-  background-image: url(../imagenes/principal.jpg);
+  background-image: url(../imagenes/presentacion-index.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -101,6 +101,11 @@ footer .menu-footer2 .iconos-footer .img-footer {
   justify-content: space-around;
   background-attachment: fixed;
   align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .main-conteiner-index #presentacion {
+    height: 25rem;
+  }
 }
 .main-conteiner-index #presentacion .presentacion-conteiner {
   display: flex;
@@ -116,24 +121,42 @@ footer .menu-footer2 .iconos-footer .img-footer {
   justify-content: center;
   text-transform: uppercase;
   font-size: 3em;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Lobster", cursive;
 }
 .main-conteiner-index #presentacion .presentacion-conteiner .frase span {
   display: flex;
+  margin-bottom: 2em;
   justify-content: center;
+  font-family: "Abril Fatface", cursive;
+  color: silver;
+  background-color: rgba(0, 0, 0, 0.5411764706);
+}
+@media screen and (max-width: 450px) {
+  .main-conteiner-index #presentacion .presentacion-conteiner .frase span {
+    background-color: rgba(0, 0, 0, 0.4431372549);
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .main-conteiner-index #presentacion .presentacion-conteiner .frase span {
+    color: silver;
+    background-color: rgba(0, 0, 0, 0.337254902);
+    font-size: 2.5rem;
+  }
 }
 .main-conteiner-index #presentacion .presentacion-conteiner .frase p {
   display: flex;
   justify-content: center;
+  font-family: "Lobster", cursive;
 }
 @media screen and (max-width: 450px) {
   .main-conteiner-index #presentacion .presentacion-conteiner .frase {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .main-conteiner-index #presentacion .presentacion-conteiner .frase {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (max-width: 450px) {
@@ -165,8 +188,24 @@ footer .menu-footer2 .iconos-footer .img-footer {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 450px) {
+  .main-conteiner-index #presentacion-bio .presentacion-bio-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    height: auto;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .main-conteiner-index #presentacion-bio .presentacion-bio-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+  }
+}
 .main-conteiner-index #presentacion-bio .presentacion-bio-index .imagen-bio {
-  width: 40%;
+  width: 100%;
   height: 30rem;
   display: flex;
   justify-content: left;
@@ -174,6 +213,13 @@ footer .menu-footer2 .iconos-footer .img-footer {
 @media screen and (max-width: 450px) {
   .main-conteiner-index #presentacion-bio .presentacion-bio-index .imagen-bio {
     width: 100%;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .main-conteiner-index #presentacion-bio .presentacion-bio-index .imagen-bio {
+    width: 75%;
+    display: flex;
+    justify-content: right;
   }
 }
 .main-conteiner-index #presentacion-bio .presentacion-bio-index .texto-bio-index {
@@ -187,9 +233,23 @@ footer .menu-footer2 .iconos-footer .img-footer {
   display: flex;
   justify-content: center;
   font-size: 3rem;
+  font-family: "Abril Fatface", cursive;
+}
+.main-conteiner-index #presentacion-bio .presentacion-bio-index .texto-bio-index .descripcion-bio {
+  background-color: rgba(221, 221, 221, 0.6784313725);
+  font-family: "Truculenta", sans-serif;
+  font-size: 2.5rem;
+  margin: 1.5rem;
+  text-shadow: 1.5px 1.5px 2px black;
+  font-weight: bold;
+}
+@media screen and (max-width: 451px) {
+  .main-conteiner-index #presentacion-bio .presentacion-bio-index .texto-bio-index .descripcion-bio {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
-  .main-conteiner-index #presentacion-bio .presentacion-bio-index .texto-bio-index .titulo-bio {
+  .main-conteiner-index #presentacion-bio .presentacion-bio-index .texto-bio-index .descripcion-bio {
     font-size: 2rem;
   }
 }
@@ -206,24 +266,6 @@ footer .menu-footer2 .iconos-footer .img-footer {
   color: #b20600;
   background-color: #dddddd;
   font-size: 3em;
-}
-@media screen and (max-width: 450px) {
-  .main-conteiner-index #presentacion-bio .presentacion-bio-index .texto-bio-index {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 991px) {
-  .main-conteiner-index #presentacion-bio .presentacion-bio-index .texto-bio-index {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 450px) {
-  .main-conteiner-index #presentacion-bio .presentacion-bio-index {
-    display: flex;
-    flex-direction: column;
-    justify-content: unset;
-    height: auto;
-  }
 }
 .main-conteiner-index #trailer .titulo-trailer-index:hover {
   color: #b20600;
@@ -292,16 +334,28 @@ footer .menu-footer2 .iconos-footer .img-footer {
   width: auto;
   height: 100px;
   color: whitesmoke;
+  font-size: 2rem;
 }
 .main-conteiner-index #despedida .texto-despedida {
   color: whitesmoke;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 450px) {
   .main-conteiner-index #despedida .texto-despedida {
     font-size: 0.8rem;
   }
 }
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .main-conteiner-index #despedida .texto-despedida {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 450px) {
+  .main-conteiner-index #despedida {
+    background-attachment: unset;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 700px) {
   .main-conteiner-index #despedida {
     background-attachment: unset;
   }
@@ -360,9 +414,20 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .conteiner-bio #bio .imagen-nav-servicio {
   width: 100%;
-  height: 20em;
-  background-image: url(../imagenes/IMG-20170520-WA0097.jpg);
+  height: 30em;
+  background-image: url(../imagenes/gal2.jpg);
   background-size: cover;
+}
+@media screen and (max-width: 450px) {
+  .conteiner-bio #bio .imagen-nav-servicio {
+    background-image: url(../imagenes/menu1.jpg);
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .conteiner-bio #bio .imagen-nav-servicio {
+    height: 35rem;
+    background-image: url(../imagenes/gal.jpg);
+  }
 }
 .conteiner-bio #bio .grid-conteiner-bio {
   display: grid;
@@ -418,7 +483,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .conteiner-bio #bio .grid-conteiner-bio .bio-conteiner1 .imagen-bio1 {
   display: flex;
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 .conteiner-bio #bio .grid-conteiner-bio .bio-conteiner1 .imagen-bio1 .img1-bio {
@@ -593,16 +658,26 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .conteiner-servicios .servicios-main .imagen-nav-servicio {
   width: 100%;
-  height: 20em;
-  background-image: url(../imagenes/IMG-20170520-WA0097.jpg);
+  height: 30em;
+  background-image: url(../imagenes/nav-servicio.jpg);
   background-size: cover;
+}
+@media screen and (max-width: 450px) {
+  .conteiner-servicios .servicios-main .imagen-nav-servicio {
+    background-image: url(../imagenes/menu1.jpg);
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
+  .conteiner-servicios .servicios-main .imagen-nav-servicio {
+    background-image: url(../imagenes/menu1.jpg);
+  }
 }
 .conteiner-servicios .servicios-main .servicios-descrip .servicios-intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../imagenes/IMG-20170602-WA0040.jpg);
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   color: azure;
@@ -625,10 +700,14 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .conteiner-servicios .servicios-main .servicios-descrip .servicios-intro h2 {
   font-size: 1.5rem;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 @media screen and (max-width: 450px) {
   .conteiner-servicios .servicios-main .servicios-descrip .servicios-intro h2 {
     font-size: 1rem;
+    margin-left: 1em;
+    margin-right: 1em;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
@@ -651,6 +730,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
   }
 }
 .conteiner-servicios .servicios-main .servicio-conteiner .servicios1 {
+  width: 50%;
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -672,7 +752,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 450px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios1 .servicio .descripcion-servicio h2 {
@@ -708,6 +788,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 {
   margin-right: 1rem;
   margin-left: 1rem;
+  width: 50%;
 }
 .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 .servicio {
   width: 100%;
@@ -727,7 +808,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 @media screen and (max-width: 450px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 .servicio .descripcion-servicio h2 {
@@ -755,8 +836,8 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .conteiner-gal .imagen-nav-servicio {
   width: 100%;
-  height: 20em;
-  background-image: url(../imagenes/IMG-20170520-WA0097.jpg);
+  height: 10em;
+  background-color: black;
   background-size: cover;
 }
 .conteiner-gal #fotos-galeria h2 {
@@ -875,8 +956,8 @@ footer .menu-footer2 .iconos-footer .img-footer {
 
 .conteiner-contacto .imagen-nav-servicio {
   width: 100%;
-  height: 20em;
-  background-image: url(../imagenes/IMG-20170520-WA0097.jpg);
+  height: 30em;
+  background-image: url(../imagenes/contacto1.jpg);
   background-size: cover;
 }
 .conteiner-contacto .presentacion-contacto {
@@ -1000,6 +1081,11 @@ footer .menu-footer2 .iconos-footer .img-footer {
   width: 30%;
 }
 
+/*-----fonts------
+font-family: 'Abril Fatface', cursive;
+font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Truculenta', sans-serif;*/
 .main-conteiner-index #presentacion-bio .titulos-index .titulo-bio-index, .main-conteiner-index #trailer .titulo-trailer-index, .main-conteiner-index #presentacion_servicios-index .titulo-shows .titulo-servicios-index, .main-conteiner-index #imagenes-index .titulo-gal-index .titulo-galeria-index {
   display: flex;
   justify-content: center;

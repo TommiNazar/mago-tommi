@@ -26,12 +26,20 @@
     #bio {
         width: 100%;
         height: auto;
+        
 
         .imagen-nav-servicio {
             width: 100%;
-            height: 20em;
-            background-image: url(../imagenes/IMG-20170520-WA0097.jpg);
+            height: 30em;
+            background-image: url(../imagenes/gal2.jpg);
             background-size: cover;
+            @media screen and (max-width: 450px){
+                background-image: url(../imagenes/menu1.jpg);
+            }
+            @media screen and (min-width: 451px) and (max-width: 991px){
+                height: 35rem;
+                background-image: url(../imagenes/gal.jpg);
+            }
 
         }
 
@@ -85,7 +93,7 @@
                 .imagen-bio1 {
                     display: flex;
 
-                    width: 50%;
+                    width: 100%;
                     height: auto;
 
                     .img1-bio {
