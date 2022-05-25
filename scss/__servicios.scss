@@ -76,13 +76,17 @@
             @media screen and (max-width: 450px) {
                 display: flex;
                 flex-direction: column;
+                
             }
 
             .servicios1 {
                 width: 50%;
                 margin-right: 1rem;
                 margin-left: 1rem;
-
+                @media screen and (max-width: 450px){
+                    width: 100%;
+                    margin: 0;
+                }
                 .servicio {
                     width: 100%;
                     height: auto;
@@ -100,19 +104,21 @@
 
                     .descripcion-servicio {
                         h2 {
+                            width: 100%;
                             display: flex;
                             justify-content: center;
                             margin-bottom: 1rem;
                             font-size: 2rem;
+                            background-color: #ddddddad;
 
                             @media screen and (max-width: 450px) {
                                 margin-bottom: 0.5rem;
-                                font-size: 0.9rem;
+                                font-size: 1.5rem;
                             }
 
                             @media screen and (min-width: 451px) and (max-width: 991px) {
                                 margin-bottom: 0.5rem;
-                                font-size: 0.9rem;
+                                font-size: 1.5rem;
                             }
                         }
 
@@ -120,6 +126,7 @@
                             margin-bottom: 1rem;
                             font-size: 1rem;
                             margin-left: 1rem;
+                            background-color: #ddddddad;
 
                             @media screen and (max-width: 450px) {
                                 margin-bottom: 0.5rem;
@@ -143,6 +150,10 @@
                 margin-right: 1rem;
                 margin-left: 1rem;
                 width: 50%;
+                @media screen and (max-width: 450px){
+                    width: 100%;
+                    margin: 0;
+                }
 
                 .servicio {
                     width: 100%;
@@ -160,26 +171,35 @@
                     }
 
                     .descripcion-servicio {
+                        
                         h2 {
+                            width: 100%;
                             display: flex;
                             justify-content: center;
                             margin-bottom: 1rem;
                             font-size: 2rem;
+                            background-color: #ddddddad;;
 
                             @media screen and (max-width: 450px) {
                                 margin-bottom: 0.5rem;
-                                font-size: 0.9rem;
+                                font-size: 1.5rem;
+                            }
+
+                            @media screen and (min-width: 451px) and (max-width: 991px) {
+                                margin-bottom: 0.5rem;
+                                font-size: 1.5rem;
                             }
                         }
 
                         h3 {
+                            background-color: #ddddddad;
                             margin-bottom: 1rem;
                             font-size: 1rem;
                             margin-left: 1rem;
 
                             @media screen and (max-width: 450px) {
                                 margin-bottom: 0.5rem;
-                                font-size: 0.9rem;
+                                font-size: 0.8rem;
                                 margin-left: 0.5rem;
                             }
                         }
