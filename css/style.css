@@ -914,8 +914,22 @@ footer .menu-footer2 .iconos-footer .img-footer {
     height: auto;
   }
 }
-.conteiner-gal #fotos-galeria .galeria-conteiner .img5 {
+.conteiner-gal #fotos-galeria .galeria-conteiner .img4 {
   grid-column-start: span 2;
+  object-fit: cover;
+}
+@media screen and (max-width: 450px) {
+  .conteiner-gal #fotos-galeria .galeria-conteiner .img4 {
+    grid-column-start: unset;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .conteiner-gal #fotos-galeria .galeria-conteiner .img4 {
+    grid-column-start: unset;
+  }
+}
+.conteiner-gal #fotos-galeria .galeria-conteiner .img5 {
+  grid-row-start: span 2;
 }
 @media screen and (max-width: 450px) {
   .conteiner-gal #fotos-galeria .galeria-conteiner .img5 {
@@ -929,6 +943,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 .conteiner-gal #fotos-galeria .galeria-conteiner .img6 {
   grid-row-start: span 2;
+  object-fit: contain;
 }
 @media screen and (max-width: 450px) {
   .conteiner-gal #fotos-galeria .galeria-conteiner .img6 {
@@ -940,29 +955,17 @@ footer .menu-footer2 .iconos-footer .img-footer {
     grid-column-start: unset;
   }
 }
-.conteiner-gal #fotos-galeria .galeria-conteiner .img7 {
-  grid-row-start: span 2;
-}
-@media screen and (max-width: 450px) {
-  .conteiner-gal #fotos-galeria .galeria-conteiner .img7 {
-    grid-column-start: unset;
-  }
-}
-@media screen and (min-width: 451px) and (max-width: 991px) {
-  .conteiner-gal #fotos-galeria .galeria-conteiner .img7 {
-    grid-column-start: unset;
-  }
-}
-.conteiner-gal #fotos-galeria .galeria-conteiner .img9 {
+.conteiner-gal #fotos-galeria .galeria-conteiner .img8 {
   grid-column-start: span 2;
+  object-fit: cover;
 }
 @media screen and (max-width: 450px) {
-  .conteiner-gal #fotos-galeria .galeria-conteiner .img9 {
+  .conteiner-gal #fotos-galeria .galeria-conteiner .img8 {
     grid-column-start: unset;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
-  .conteiner-gal #fotos-galeria .galeria-conteiner .img9 {
+  .conteiner-gal #fotos-galeria .galeria-conteiner .img8 {
     grid-column-start: unset;
     display: none;
   }
