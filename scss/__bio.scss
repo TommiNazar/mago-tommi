@@ -97,19 +97,32 @@
                 .texto-bio h1 {
                     display: flex;
                     justify-content: center;
-                    font-size: 2em;
+                    font-size: 3em;
                     color: white;
+
+                    @media screen and (max-width: 450px) {
+                        font-size: 1.5em;;
+                    }
+    
+                    @media screen and (min-width: 451px) and (max-width: 991px) {
+                        font-size: 2em;
+                    }
                     
                 }
 
                 .texto-bio h2 {
                     padding: 1em;
-                    font-size: 1em;
+                    font-size: 2em;
                     color: white;
 
                     @media screen and (max-width: 450px){
+                        font-size: 1em;
                         border-bottom: solid white;
                     }
+                    @media screen and (min-width: 451px) and (max-width: 991px) {
+                        font-size: 1.5em;
+                    }
+
 
                 }
             }
