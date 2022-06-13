@@ -885,36 +885,36 @@ footer .menu-footer2 .iconos-footer .img-footer {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.3em;
 }
 @media screen and (max-width: 450px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios1 .servicio .descripcion-servicio h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios1 .servicio .descripcion-servicio h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2em;
   }
 }
 .conteiner-servicios .servicios-main .servicio-conteiner .servicios1 .servicio .descripcion-servicio h3 {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.5em;
   margin-left: 1rem;
 }
 @media screen and (max-width: 450px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios1 .servicio .descripcion-servicio h3 {
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1em;
     margin-left: 0.5rem;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios1 .servicio .descripcion-servicio h3 {
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1.3em;
     margin-left: 0.5rem;
   }
 }
@@ -953,29 +953,36 @@ footer .menu-footer2 .iconos-footer .img-footer {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 2.3em;
 }
 @media screen and (max-width: 450px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 .servicio .descripcion-servicio h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 .servicio .descripcion-servicio h2 {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 2em;
   }
 }
 .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 .servicio .descripcion-servicio h3 {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-left: 1rem;
 }
 @media screen and (max-width: 450px) {
   .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 .servicio .descripcion-servicio h3 {
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 991px) {
+  .conteiner-servicios .servicios-main .servicio-conteiner .servicios2 .servicio .descripcion-servicio h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3em;
     margin-left: 0.5rem;
   }
 }
