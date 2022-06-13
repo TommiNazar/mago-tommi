@@ -171,8 +171,8 @@ footer .menu-footer2 .iconos-footer .img-footer {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: center;
 }
 @media screen and (max-width: 450px) {
   .main-conteiner-index #presentacion {
@@ -196,10 +196,9 @@ footer .menu-footer2 .iconos-footer .img-footer {
 .main-conteiner-index #presentacion .presentacion-conteiner {
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  margin: 5em;
-  margin-right: 8em;
-  margin-top: 15em;
+  justify-content: flex-start;
+  margin: 1em;
+  margin-top: 12em;
   align-items: flex-end;
 }
 @media screen and (max-width: 450px) {
@@ -225,7 +224,6 @@ footer .menu-footer2 .iconos-footer .img-footer {
   width: 40%;
   height: auto;
   display: flex;
-  justify-content: start;
   align-items: center;
 }
 .main-conteiner-index #presentacion .presentacion-conteiner .magotommi img {
@@ -254,11 +252,14 @@ footer .menu-footer2 .iconos-footer .img-footer {
   text-decoration: none;
   display: flex;
   justify-content: flex-end;
-  margin: 5em;
+  align-items: flex-end;
+  font-size: 2em;
+  margin-top: 3em;
 }
 @media screen and (max-width: 450px) {
   .main-conteiner-index #presentacion .presentacion-conteiner .boton-index {
     justify-content: center;
+    font-size: 1.5em;
   }
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
@@ -335,6 +336,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 5%;
 }
 @media screen and (max-width: 450px) {
   .main-conteiner-index #presentacion-bio .presentacion-bio-index {
@@ -355,7 +357,6 @@ footer .menu-footer2 .iconos-footer .img-footer {
 .main-conteiner-index #presentacion-bio .presentacion-bio-index .imagen-bio {
   width: 100%;
   height: 100%;
-  margin: 1.5em;
   display: flex;
   justify-content: left;
 }
@@ -556,7 +557,12 @@ footer .menu-footer2 .iconos-footer .img-footer {
 }
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .main-conteiner-index #despedida .despedida-conteiner .titulo-desp {
-    margin-top: 2.5em;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    margin-top: 2em;
   }
 }
 .main-conteiner-index #despedida .despedida-conteiner .texto-despedida {
@@ -578,7 +584,7 @@ footer .menu-footer2 .iconos-footer .img-footer {
 @media screen and (min-width: 451px) and (max-width: 991px) {
   .main-conteiner-index #despedida .despedida-conteiner .texto-despedida {
     font-size: 1.3rem;
-    width: 100%;
+    width: 95%;
   }
 }
 .main-conteiner-index #imagenes-index {
