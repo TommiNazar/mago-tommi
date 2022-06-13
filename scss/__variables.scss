@@ -1,9 +1,9 @@
+/*----------variables--------*/
 
 /*-----fonts------
-font-family: 'Abril Fatface', cursive;
-font-family: 'Fira Sans Condensed', sans-serif;
-font-family: 'Lobster', cursive;
-font-family: 'Truculenta', sans-serif;*/
+font-family: 'Montserrat', sans-serif;*/
+
+
 
 $boton: (
     br: 6em,
@@ -27,6 +27,19 @@ $boton: (
     font-size: 2em;
 }
 
+%nav-imagen{
+    margin-left: 0;
+    height: auto;
+    width: auto;
+    justify-content: left;
+}
+
+%imagen-nav-servicio {
+    width: 100%;
+    height: 30em;
+    background-size: cover;
+}
+
 @mixin bg ($color) {
     background: radial-gradient($color 3px, transparent 4px),
             radial-gradient($color 3px, transparent 4px),
@@ -48,4 +61,131 @@ $boton: (
             #fff;
         background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
         background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+@mixin footer {
+    footer {
+        background-color: #413f42;
+        background-image: url(../imagenes/footer.jpg);
+        width: 100%;
+        height: auto;
+        padding: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media screen and (max-width: 450px) {
+            background-color: #413f42;
+            background-image: none;
+            background-size: unset;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+            
+        }
+        @media screen and (min-width: 451px) and (max-width: 700px){
+            background-color: #413f42;
+            background-image: none;
+            background-size: unset;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0;
+        }
+    
+        .menu-footer1 {
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            
+            border-right: solid white;
+            padding-right: 0;
+            
+            @media screen and (max-width: 450px) {
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0;
+                width: auto;
+                height: auto;
+                font-size: 1em;
+    
+            }
+            li {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                @media screen and (max-width: 450px){
+                    font-size: 0.8em;
+                }
+
+                strong{
+                    color: white;
+                    margin: 1em;
+                    text-decoration: underline;
+                    display: flex;
+                align-items: flex-start;
+                }
+    
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+    
+                    &:hover {
+                        color: #b20600;
+                        text-shadow: none;
+                    }
+                    
+                }
+            }
+        }
+    
+        .menu-footer2 {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            @media screen and (max-width: 450px) {
+                align-items: flex-end;
+                width: auto;
+                
+            }
+            
+
+            
+    
+            .iconos-footer {
+                width: 100%;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                color: whitesmoke;
+                
+                li{
+                    @media screen and (max-width: 450px) {
+                        font-size: 0.8em;
+                        display: flex;
+                        justify-content:flex-start;
+                        
+                    }
+                    strong{
+                        color: white;
+                        margin: 1em;
+                        text-decoration: underline;
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                }
+    
+                .img-footer {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+    
 }

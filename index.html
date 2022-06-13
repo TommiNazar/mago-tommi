@@ -13,26 +13,15 @@
 
     <!--meta seo-->
     <meta name="description"
-        content="shows de magia de la mano de un profecional de este arte milenario. Shows de escenario, salon, magia de cerca, magia para adultos, magia infantil. Mago Tommi">
+        content="shows de magia de la mano de un profecional de este arte milenario. Shows de escenario, salon, magia de cerca, magia para adultos, magia infantil, Mago Tommi">
     <meta name="keywords"
-        content="Tommi, Magia, Show, Teatro, entretenimiento, Cumpleaños, Eventos, espectaculo, magia de cerca, magia infantil, magic, cordoba, artista, arte, circo, mago ">
+        content="Tommi, Magia, Show, Teatro, entretenimiento, fiestas, Cumpleaños, Eventos, espectaculo, magia de cerca, magia infantil, magic, cordoba, artista, arte, circo, mago ">
 
     <meta property: "og:type" content="web site">
     <meta property:"og:title" content="Mago Tommi - Artista Ilusionista Profecional">
     <meta property:"og:url" content="https://www...">
     <meta property:"og:image" content="https://www...">
 
-
-    <!-- Bootstrap CSS carucel -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" />
     <!---------------link bootstrap------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -40,9 +29,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagenes/infalntil-01.jpg" type="image/x-icon">
     <!-------------link font---------->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fira+Sans+Condensed:wght@100&family=Lobster&family=Truculenta:opsz,wght@12..72,100&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
     <!--imagen de prueba-->
     <title>Mago Tommi - Ilusionista Profecional </title>
 </head>
@@ -55,7 +44,7 @@
             <div class="container">
                 <a class="navbar-brand " href="index.html">
                     <div class="imagen-logo">
-                        <img src="imagenes/logo1.jpg" alt="logo mago Tommi" class="imagen-logo">
+                        <img src="imagenes/Frente Tarjeta Nuevo.jpg" alt="logo mago Tommi" class="imagen-logo">
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -67,19 +56,19 @@
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="index.html">inicio</a>
+                            <a class="nav-link text-white nav-enlaces" href="index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="pag/servicios.html">servicios</a>
+                            <a class="nav-link text-white nav-enlaces" href="pag/bio.html">BIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="pag/bio.html">bio</a>
+                            <a class="nav-link text-white nav-enlaces" href="pag/servicios.html">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="pag/galeria.html">galeria</a>
+                            <a class="nav-link text-white nav-enlaces" href="pag/galeria.html">GALERIA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="pag/contacto.html">contacto</a>
+                            <a class="nav-link text-white" href="pag/contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -92,25 +81,34 @@
         <!--primera seccion-->
         <section id="presentacion">
             <div class="presentacion-conteiner animate__animated animate__fadeInDown">
-                <h1 class="frase"><span>Mago Tommi</span><br>"la magia esta en todos lados,<p>solo hay que observar!"
-                    </p>
+                <div class="magotommi"><img src="imagenes/magotommi.png" alt=""></div>
+                <h1 class="frase">"la magia esta<span>en todos lados,</span><span>solo hay que observar!"</span>
                 </h1>
+                <div class="boton-index">
+                    <a href="pag/contacto.html" class="boton-presentacion">contacto</a>
+                </div>
+
             </div>
 
         </section>
+
+        <div class="fondo-presentacion"></div>
+
         <!--segunda seccion-->
         <section id="presentacion-bio">
             <div class="titulos-index">
-                <a href="pag/bio.html" class="titulo-bio-index">Biografia</a>
+                <h2> <strong>¿Quien Soy?</strong> </h2>
             </div>
             <div class="presentacion-bio-index">
                 <div class="imagen-bio">
-                    <img src="imagenes/bio-index1.jpg" alt="mago Tommi" class="imagen-bio">
+                    <img src="imagenes/index-bio.jpg" alt="mago Tommi" class="imagen-bio">
                 </div>
-                
+
                 <div class="texto-bio-index">
-                    <h2 class="titulo-bio">¿Quien Soy?</h2>
-                    <h2 class="descripcion-bio">Mago profecional de la ciudad de Cordoba Argentina, Mediterraneo de Corazon, desde el 2012 se dedica a dibujar sonrisas de felicidad y asombro, junto al hermoso arte de la magia</h2>
+                    <h2 class="titulo-bio"> <strong>¿Quien Soy?</strong> </h2>
+                    <h2 class="descripcion-bio">Mago profecional de la ciudad de Cordoba Argentina, Mediterraneo de
+                        Corazon, desde el 2012 se dedica a dibujar sonrisas de felicidad y asombro, junto al hermoso
+                        arte de la magia</h2>
                     <div class="boton-bio-conteiner">
                         <a href="pag/bio.html" class="boton-bio">ir a bio</a>
                     </div>
@@ -121,9 +119,7 @@
         </section>
         <!--tercera seccion-->
         <section id="trailer">
-            <div class="titulo-trailer">
-                <a href="pag/galeria.html" class="titulo-trailer-index">Trailer</a>
-            </div>
+
             <div class="video-trailer">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/zF8p3npQzVs"
                     title="YouTube video player" frameborder="0"
@@ -139,22 +135,22 @@
             </div>
             <div class="servicios-index">
                 <div class="servicio-index">
-                    <img src="imagenes/servicio-salon.jpg" alt="show Magia" class="img-serv">
-                    <h2 class="titulo-serv">Magia de Salon y Escenario</h2>
-                </div>
-                <div class="servicio-index">
-                    <img src="imagenes/servicio-cerca.jpg" alt="show Magia" class="img-serv">
-                    <h2 class="titulo-serv">Magia de Cerca</h2>
+                    <img src="imagenes/index-servicio1.jpg" alt="show Magia" class="img-serv">
 
                 </div>
                 <div class="servicio-index">
-                    <img src="imagenes/servicios-recepcion.jpg" alt="show Magia" class="img-serv">
-                    <h2 class="titulo-serv">Recepciones Magicas</h2>
+                    <img src="imagenes/index-servicio2 (1).jpg" alt="show Magia" class="img-serv">
+
 
                 </div>
                 <div class="servicio-index">
-                    <img src="imagenes/servicios-cooporativo.jpg" alt="show Magia" class="img-serv">
-                    <h2 class="titulo-serv">Magia Corporativa</h2>
+                    <img src="imagenes/index-servicio3.jpg" alt="show Magia" class="img-serv">
+
+
+                </div>
+                <div class="servicio-index">
+                    <img src="imagenes/index-servicio4.jpg" alt="show Magia" class="img-serv">
+
 
                 </div>
             </div>
@@ -163,9 +159,15 @@
         </section>
         <!--quinta seccion-->
         <section id="despedida">
-            <h2 class="titulo-desp">Experiencias Asombrosas</h2>
+            <div class="despedida-conteiner">
+                <h2 class="titulo-desp">Experiencias <br> Asombrosas</h2>
 
-            <h3 class="texto-despedida">Un espectáculo de magia y comedia, que consta de una propuesta artística fuera de lo convencional, original e inteligente. Esta experiencia nos llevará a vivir rutinas de alto impacto visual, donde la música, la participación de los espectadores y las risas; serán los principales protagonistas de la función</h3>
+                <h3 class="texto-despedida">Un espectáculo de magia y comedia, que consta de una propuesta artística
+                    fuera de lo convencional, original e inteligente. Esta experiencia nos llevará a vivir rutinas de
+                    alto impacto visual, donde la música, la participación de los espectadores y las risas; serán los
+                    principales protagonistas de la función</h3>
+            </div>
+
         </section>
         <!--sexta seccion-->
         <section id="imagenes-index">
@@ -173,54 +175,23 @@
             <div class="titulo-gal-index">
                 <a href="pag/galeria.html" class="titulo-galeria-index">Galeria de fotos</a>
             </div>
-
-            <div class="container-fluid my-5">
-
-                <div class="row">
-                    <div class="col-12 m-auto">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item mb-4">
-                                <div class="card border-0 shadow ">
-                                    <img src="imagenes/img99.jpg" alt="" class="card-img-top">
-
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="card border-0 shadow">
-                                    <img src="imagenes/IMG-20170506-WA0062.jpg" alt="" class="card-img-top">
-
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card border-0 shadow">
-                                    <img src="imagenes/IMG-20170705-WA0059.jpg" alt="" class="card-img-top">
-
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card border-0 shadow">
-                                    <img src="imagenes/vvvv.jpg" alt="" class="card-img-top">
-
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card border-0 shadow">
-                                    <img src="imagenes/ela.JPG" alt="" class="card-img-top">
-
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card border-0 shadow">
-                                    <img src="imagenes/345.jpg" alt="" class="card-img-top">
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+            <div class="index-galeria-conteiner">
+                <div>
+                    <img src="imagenes/index-galeria1 (1).jpg" alt="">
+                </div>
+                <div>
+                    <img src="imagenes/index-galeria2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="imagenes/index-galeria3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="imagenes/index-galeria4.jpg" alt="">
                 </div>
             </div>
+            
+
+
 
         </section>
     </main>
@@ -228,28 +199,38 @@
     <footer>
         <div class="menu-footer1">
             <ul class="menu-footer">
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="pag/servicios.html">servicios</a></li>
-                <li><a href="pag/bio.html">bio</a></li>
-                <li><a href="pag/galeria.html">galeria</a></li>
-                <li><a href="pag/contacto.html">contacto</a></li>
+                <li><strong>SECCIONES</strong> </li>
+                <li><a href="index.html">INCIO</a></li>
+                
+                <li><a href="pag/bio.html">BIO</a></li>
+                <li><a href="pag/servicios.html">SERVICIOS</a></li>
+                <li><a href="pag/galeria.html">GALERIA</a></li>
+                <li><a href="pag/contacto.html">CONTACTO</a></li>
             </ul>
         </div>
 
         <div class="menu-footer2">
             <ul class="iconos-footer">
-                <li><a href="https://www.instagram.com"><img src="imagenes/iconos/instagram (1).png" alt=""
-                            class="img-footer"></li></a>
-                <li><a href="https://www.facebook.com/"><img src="imagenes/iconos/facebook (2).png" alt=""
-                            class="img-footer"></a></li>
-                <li> <img src="imagenes/iconos/gmail.png" alt="" class="img-footer"> tommi.nazar@gmail.com</li>
-                <li> <img src="imagenes/iconos/whatsapp (1).png" alt="" class="img-footer"> 3515942866</li>
+                <li><strong>CONTACTO</strong></li>
+                <li>  tommi.nazar@gmail.com</li>
+                <li> 3515942866</li>
+
+                <li>
+                    <a href="https://www.instagram.com"><img src="imagenes/iconos/footer-instagram.png" alt=""class="img-footer">
+                    </a>
+                    <a href="https://www.facebook.com/"><img src="imagenes/iconos/footer-facebook.png" alt=""class="img-footer"></a>
+                </li>
+
+                
+                
             </ul>
         </div>
 
     </footer>
 
     </div>
+
+    
     <!------nav scrip-------->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
@@ -264,32 +245,7 @@
         });
     </script>
 
-    <!--------scrip carcel0-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 15,
-            nav: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    </script>
 
     <!----------scrip bootstrap-------->
 

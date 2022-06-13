@@ -1,22 +1,25 @@
+
+/*----------contacto--------*/
+
+
 .conteiner-contacto{
 
     .imagen-nav-servicio {
-        width: 100%;
-        height: 30em;
+        @extend %imagen-nav-servicio;
         background-image: url(../imagenes/contacto1.jpg);
-        background-size: cover;
+        
     
     }
 
     .presentacion-contacto {
-        background-color: #000000;
-        color: aliceblue;
+        background-color: #413f42;
+        color: white;
         display: flex;
         justify-content: center;
         flex-direction: column;
         h1 {
             text-align: center;
-            color: saddlebrown;
+            color: white;
             padding: 1rem;
             font-size: 3rem;
             @media screen and (max-width: 450px){
@@ -40,7 +43,7 @@
     .contacto-form {
         display: flex;
         flex-direction: row;
-        @include bg(#F9D923);
+        background-color: #413f42;
 
         @media screen and (max-width: 450px){
             display: flex;
@@ -55,7 +58,7 @@
         .contacto-text {
             width: 40%;
             margin: 2em;
-            background-color: #ddddddad;
+            color: white;
             @media screen and (max-width: 450px){
                 width: 100%;
                 margin: 1em;
@@ -65,6 +68,25 @@
                 width: 90%;
                 margin: 1em;
                 font-size: 0.8rem;
+            }
+            h2{
+                width: 80%;
+            }
+
+            p{
+                width: 100%;
+                color: rgb(175, 52, 52);
+                font-size: 2em;
+                margin: 0.5em;
+                text-decoration: underline;
+
+                @media screen and (max-width: 450px){
+                    font-size: 1.5em;
+                }
+                @media screen and (min-width: 451px) and (max-width: 991px){
+                    font-size: 2em;
+                }
+            
             }
             
         }
@@ -103,6 +125,14 @@
             
             input {
                 width: 30%;
+                @media screen and (max-width: 450px){
+                    width: 80%;
+                    
+                }
+                @media screen and (min-width: 451px) and (max-width: 991px){
+                    width: 80%;
+                    
+                }
             }
         }
     }
